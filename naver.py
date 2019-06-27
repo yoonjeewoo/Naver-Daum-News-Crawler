@@ -10,15 +10,9 @@ conn = pymysql.connect(host=c.host, user=c.user, password=c.password, db=c.datab
 
 curs = conn.cursor()
 
-crawl_time = datetime.datetime(2018, 1, 1)
-end_time = datetime.datetime(2019, 1, 1)
+crawl_time = datetime.datetime(2019, 1, 1)
+end_time = datetime.datetime(2019, 4, 4)
 print(crawl_time,"크롤링 시작")
-
-# print(crawl_time.year)
-# print(crawl_time.month)
-# print(crawl_time.day)
-
-
 
 while(True):
   if (crawl_time == end_time):
